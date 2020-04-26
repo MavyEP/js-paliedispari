@@ -17,13 +17,13 @@ if (parola == true) {
 
 
 //stabilisco la funzione per controllare se la parola data dall'utente è palindroa
-function checkPalindroma(parola_da_controllare) {
+function checkPalindroma(stringa) {
   //assegno ad una variabile quello che sarebbe la parola riggirata
-  var parola_riggirata = parola_da_controllare.split('').reverse().join('');
+  var parola_riggirata = stringa.split('').reverse().join('');
   //stampo la parola riggirata
   console.log("La parola al contrario é: " + parola_riggirata);
   //se la parola riggirata é uguale alla parola dell utente allora é palindroma : true
-  if (parola_riggirata == parola_da_controllare) {
+  if (parola_riggirata == stringa) {
        return true;
   }
   //se la parola riggirata non é uguale alla parola dell utente allora non é palindroma : false
